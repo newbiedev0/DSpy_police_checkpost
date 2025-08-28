@@ -391,11 +391,10 @@ elif page == "Analytics & Reports":
     st.header("📈 Analytics & Reports")
     st.write("Explore various statistical reports and trends from the traffic stop data.")
 
-    # Combined queries under a single selectbox
     selected_query_name = st.selectbox("Select an Insightful Query", list(INSIGHTS.keys()))
     query_to_run = INSIGHTS[selected_query_name]
     
-    st.code(query_to_run, language='sql')
+    # Removed this line: st.code(query_to_run, language='sql')
 
     if st.button(f"Run {selected_query_name} Report"):
         st.markdown("---")
