@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 from sqlalchemy import create_engine, text
-from datetime import datetime
+
 
 MYSQL_USER = "root"
 MYSQL_PASSWORD = "venkat"
